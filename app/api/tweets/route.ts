@@ -1,6 +1,14 @@
 import { NextResponse } from 'next/server';
 
-let tweets: any[] = [];
+interface Tweet {
+  text: string;
+  likes: string;
+  retweets: string;
+  views: string;
+  timestamp: string;
+}
+
+let tweets: Tweet[] = [];
 let tweetCount = 0;
 let lastResetDate = new Date().toISOString().split('T')[0];
 
