@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        droop: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(3deg) translateY(5px)' }
+        }
+      },
+      animation: {
+        'droop': 'droop 3s ease-in-out infinite'
+      }
     },
   },
   plugins: [],
